@@ -1,0 +1,59 @@
+<ActionBar style="background-color: black;">
+    <Label text="Home"></Label>
+    <GridLayout columns="*,5*,5*,*" rows="*" width="100%">
+        <label text="&#xf104;" class="font-awesome gb-topbar-icon" row="0" col="0"></label>
+        <label text="&#xf141;" class="font-awesome gb-topbar-icon" row="0" col="3"></label>
+
+    </GridLayout>
+</ActionBar>
+<GridLayout style="background-color: black;" columns="*,*,*,*"
+    rows="*,auto,auto,auto,auto,auto,auto,auto,auto,auto,auto,*" width="100%">
+
+    <Image src="res://profilepic" width="100" borderRadius="50%" row="0" style="align-items: center;" colSpan="4">
+    </Image>
+    <!-- <Image src="res://yesicon" width="50" borderRadius="100" row="1" colSpan="3"></Image>-->
+    <Label text="Eleanor Pena" row="2" colSpan="4" style="text-align: center; color: rgb(250, 245, 247);"></Label>
+    <Label text="@eleanor333" row="3" colSpan="4" style="text-align: center; color: rgb(250, 245, 247);"></Label>
+    <Label text="Personal Bio data" row="4" colSpan="4" style="text-align: center; color: rgb(250, 245, 247);"></Label>
+    <Label text="Lorem ipsum dolor sir amet,cons" row="5" colSpan="4"
+        style="text-align: center; color: rgb(250, 245, 247);"></Label>
+
+    <Label text="10K" row="7" col="0" style=" color:  #62d6b9;"></Label>
+    <Label text="1.1K" row="7" col="1" style=" color: #62d6b9;"></Label>
+    <Label text="15.2M" row="7" col="2" style=" color: #62d6b9;"></Label>
+    <Label text="75.2M" row="7" col="3" style=" color:  #62d6b9;"></Label>
+
+    <Label text="Followers" row="8" col="0" style=" color: rgb(250, 245, 247);"></Label>
+    <Label text="Following" row="8" col="1" style=" color: rgb(250, 245, 247);"></Label>
+    <Label text="Views" row="8" col="2" style=" color: rgb(250, 245, 247);"></Label>
+    <Label text="Likes" row="8" col="3" style=" color: rgb(250, 245, 247);"></Label>
+
+    <button row="10" colSpan="4" text="Follow" style="align-content: center;" class="btn-primary"></button>
+    <!--<label  text="&#xf124;" class="font-awesome gb-topbar-icon"  row="10" col="3"></label>-->
+
+    <TabView selectedIndex="0" (selectedIndexChanged)="onSelectedIndexchanged($event)" style="background-color: black;"
+        class="font-awesome gb-topbar-icon" row="12" colSpan="4">
+        <StackLayout *tabItem="{title: '&#xf03d; 125 videos'}" style="background-color: black;">
+            <GridLayout columns="*,*,*" rows="*,*" width="100%">
+                <WebView requiresUserActionForMediaPlayback="false" [src]="urlSource" row="0" col="0"></WebView>
+                <WebView requiresUserActionForMediaPlayback="false" [src]="urlSource" row="0" col="1"></WebView>
+                <WebView requiresUserActionForMediaPlayback="false" [src]="urlSource" row="0" col="2"></WebView>
+                <WebView requiresUserActionForMediaPlayback="false" [src]="urlSource" row="1" col="0"></WebView>
+                <WebView requiresUserActionForMediaPlayback="false" [src]="urlSource" row="1" col="1"></WebView>
+                <WebView requiresUserActionForMediaPlayback="false" [src]="urlSource" row="1" col="2"></WebView>
+            </GridLayout>
+        </StackLayout>
+        <StackLayout *tabItem="{title: '&#xf004; Liked'}" style="background-color: black;"
+            class="font-awesome gb-topbar-icon">
+            <GridLayout columns="*,*,*" rows="*,*" width="100%">
+                <WebView requiresUserActionForMediaPlayback="false" [src]="urlSourceliked" row="0" col="0"></WebView>
+                <WebView requiresUserActionForMediaPlayback="false" [src]="urlSourceliked" row="0" col="1"></WebView>
+                <WebView requiresUserActionForMediaPlayback="false" [src]="urlSourceliked" row="0" col="2"></WebView>
+                <WebView requiresUserActionForMediaPlayback="false" [src]="urlSourceliked" row="1" col="0"></WebView>
+                <WebView requiresUserActionForMediaPlayback="false" [src]="urlSourceliked" row="1" col="1"></WebView>
+                <WebView requiresUserActionForMediaPlayback="false" [src]="urlSourceliked" row="1" col="2"></WebView>
+            </GridLayout>
+        </StackLayout>
+    </TabView>
+
+</GridLayout>

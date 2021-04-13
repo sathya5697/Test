@@ -1,0 +1,26 @@
+@import "~@nativescript/theme/css/core.css";
+@import "~@nativescript/theme/css/blue.css";
+
+/* Place any CSS rules you want to apply on both iOS and Android here.
+This is where the vast majority of your CSS code goes. */
+.font-awesome { 
+font-family: "fontAwesome, fontawesome-webfont";
+color: #fcf8f8;
+}
+.fa {
+font-family: 'FontAwesome';
+font-size: 32;
+color: #faf9f9;
+}
+
+.btn-primary {
+font-size: 12;
+border-radius: 12;
+background-color: #62d6b9;
+height:40;
+width: 150;
+text-transform: capitalize;
+margin:0 10;
+
+}
+.gb-topbar-icon{ font-size: 20; margin-top: 5;}
